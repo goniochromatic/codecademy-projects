@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+  <title>Planet Pixel</title>
+  <link rel="icon" type="image/x-icon" href="../fig/alien_planet.svg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../dist/output.css"/>
+  <style type="text/css">
+    @font-face {
+      font-family: bit;
+      src: url(../fonts/8-bit.ttf);
+    }
+    .font-bit {
+      font-family: bit;
+    }
+  </style>
+</head>
+<body>
+
+<!-- *** Navbar *** -->
+  <header class="bg-green-300">
+  <div id='MainContent'
+    class="flex items-center h-16 max-w-screen-xl gap-4 px-4 mx-auto sm:px-6 lg:px-8"
+  >
+    <a class="block text-grey-800" href="index.html">
+      <span class="sr-only">Home</span>
+      <img src="../fig/alien_planet.svg" width="50" height="50">
+    </a>
+
+    <div class="flex items-center justify-end flex-1 md:justify-between">
+      <nav class="hidden md:block" aria-labelledby="header-navigation">
+        <h2 class="sr-only" id="header-navigation">Header navigation</h2>
+
+        <ul class="flex mx-3 items-center gap-6 text-sm">
+          <li>
+            <a class="text-grey-800 transition border-b-4 border-transparent hover:border-purple-700" href="index.html">
+              Home
+            </a>
+            
+          </li>
+
+          <li>
+            <a class="text-grey-800 transition border-b-4 border-purple-700" href="#">
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a class="text-grey-800 transition border-b-4 border-transparent hover:border-purple-700" href="https://anyhow.prose.sh">
+              Blog
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <div class="sm:gap-4 sm:flex">
+          <a class="relative inline-block text-sm font-bold text-gray-800 group" href="#">
+            <span class="absolute inset-0 border border-gray-800 bg-white border-dashed transition-transform"></span>
+            <span class="relative block px-5 py-3 transition-transform bg-white border border-gray-800 active:translate-x-1 translate-x-0 translate-y-0 group-hover:-translate-x-1 group-hover:-translate-y-1 active:bg-purple-900 active:text-yellow-200">
+            BUY ME COFFEE PLS
+            </span>
+          </a>
+        </div>
+
+        <button
+          class="block p-2.5 text-white bg-gray-800 rounded md:hidden hover:text-white/75 transition"
+        >
+          <span class="sr-only">Toggle menu</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-5 h-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  </header>
+<!-- ^^^ Navbar ^^^ -->
+
+
+<div class="grid place-items-center">
+
+  <!-- *** Header *** -->
+    <h1 class="text-2xl m-7 pb-2 font-bold font-bit border-b-8 border-purple-700">
+    My projects
+    </h1>
+  <!-- ^^^ Header ^^^ -->
+
+  <!-- *** Content *** -->
+
+  <!-- ^^^ Content ^^^ -->
+
+  <!-- *** Project card *** -->
+    <a class="relative block m-7 group w-80 h-96" href="space_invaders.html">
+    <span class="absolute inset-0 border-2 max-w-xs border-black border-dashed"></span>
+
+    <div class="relative flex w-80 h-full transition-transform transform bg-white border-2 border-black group-hover:-translate-x-2 group-hover:-translate-y-2">
+
+      <div class="px-8 py-8 transition-opacity group-hover:opacity-0 group-hover:absolute">
+        <img src="../fig/alien.svg" width="75" height="75">
+        <h2 class="mt-4 text-2xl font-medium">Denisoid invasion</h2>
+      </div>
+
+      <div class="absolute p-8 transition-opacity opacity-0 group-hover:opacity-100 group-hover:relative">
+        <h2 class="mt-4 text-2xl font-medium">Space Invaders</h2>
+
+        <p class="mt-4">
+          This is a simple C++ implementation of the classic game Space Invaders, using the OpenGL library. 
+        </p>
+        
+        <span class="relative w-2/3 my-3 block border border-white bg-green-300 hover:border-gray-800 hover:border-dashed transition-transform">
+          <span class="block px-5 py-3 font-bold text-center transition-transform bg-white border border-gray-800 hover:-translate-x-1 hover:-translate-y-1 active:bg-purple-900 active:text-yellow-200">
+        Read More
+        </span>
+        </span>
+        
+
+      </div>
+    </div>
+    </a>
+  <!-- ^^^ Project card ^^^ -->
+
+</div>
+
+
+<!-- *** Footer *** -->
+
+  <footer class="bg-green-300 pt-4">
+  <div
+    class="relative max-w-screen-xl px-4 py-7 mx-auto sm:px-6 lg:px-8 lg:pt-10"
+  >
+    <div class="absolute top-4 sm:top-6 lg:top-6 right-4 sm:right-6 lg:right-8">
+      <a
+        class="inline-block p-2 text-gray-800 transition bg-gray-700 rounded-full sm:p-3 lg:p-4 hover:bg-gray-600"
+        href="#MainContent"
+      >
+        <span class="sr-only">Back to top</span>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5"
+          viewBox="0 0 20 20"
+          fill="yellow"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div class="flex items-center flex-col">
+      <div>
+        <div class="flex justify-center gap-5 place-items-center">
+          <img src="../fig/alien_planet.svg" width="50" height="50">
+          <h2 class="font-bit text-1xl">
+            Planet Pixel
+          </h2>
+        </div>
+
+        <p
+          class="max-w-md mx-auto mt-6 leading-relaxed text-center text-gray-800 lg:text-left"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+          consequuntur amet culpa cum itaque neque.
+        </p>
+      </div>
+
+      <div class="flex max-w-lg mt-7 items-center lg:gap-6 md:gap-5 sm:gap-4 gap-3 max-w-sm justify-center flex-wrap">
+          <img src="../fig/alien.svg" width="50" height="50">
+          <img src="../fig/skullien.svg" width="50" height="50">
+          <img src="../fig/bat.svg" width="50" height="50">
+          <img src="../fig/jellien.svg" width="50" height="50">
+          <img src="../fig/cyclops.svg" width="50" height="50">
+          <img src="../fig/tetraclops.svg" width="50" height="50">
+          <img src="../fig/cricket.svg" width="50" height="50">
+      </div>
+
+      <!-- *** nav *** 
+        <nav class="mt-7" aria-labelledby="footer-navigation">
+        <h2 class="sr-only" id="footer-navigation">Footer navigation</h2>
+
+        <ul
+          class="flex flex-wrap justify-center gap-6 lg:justify-end md:gap-8 lg:gap-12"
+        >
+          <li>
+            <a class="text-gray-800 transition hover:text-white/75" href="/">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a class="text-gray-800 transition hover:text-white/75" href="/">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a class="text-gray-800 transition hover:text-white/75" href="/">
+              Projects
+            </a>
+          </li>
+
+          <li>
+            <a class="text-gray-800 transition hover:text-white/75" href="/">
+              Blog
+            </a>
+          </li>
+        </ul>
+        </nav>
+      -->
+
+    </div>
+
+    <p class="mt-7 text-sm text-center text-gray-800 lg:text-center">
+      Copyright &copy; 2022. All rights reserved.
+    </p>
+  </div>
+  </footer>
+<!-- ^^^ Footer ^^^ -->
+
+</body>
+</html>
